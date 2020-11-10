@@ -33,6 +33,10 @@ p {
     font-weight: 300;
 }
 
+b {
+    font-weight: bold;
+}
+
 #picture {
     width: 200px;
     height: 200px;
