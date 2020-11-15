@@ -5,6 +5,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    color: #69606d;
 }
 
 html,
@@ -15,59 +16,112 @@ body {
 body {
     margin: 0 auto;
     max-width: 1024px;
-    background-color: #B0D0D3;
+    background-color: #f7f8fa;
+}
+
+main {
+    max-width: 1366px;
+    margin-top: 100px;
 }
 
 h1 {
-    text-align: center;
-    margin: 20px;
-    font-weight: bold;
+    color: #000;
+    font-weight: bolder;
+    font-size: 32px;
 }
 
-h2 {
-    color: #542344;
-    font-weight: bold;
+h3 {
+    color: #000;
+    font-weight: 400;
 }
 
-p {
-    font-weight: 300;
+h4 {
+    font-size: 15px;
+    color: #000;
+    font-weight: 400;
 }
 
-b {
+span {
+    color: #50afc0;
     font-weight: bold;
+    font-size: 34px;
+}
+
+#container {
+    display: flex;
+    justify-content: space-around;
+}
+
+#about-me {
+    justify-content: left;
+}
+
+#title {
+    width: 400px;
+}
+
+#description {
+    color: #69606d;
+    margin-top: 30px;
+    width: 550px;
+    font-size: 15px;
+}
+
+#social-networks {
+    margin-top: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #b8acbd;
+}
+
+svg:hover path {
+    fill: #b8acbd;
+}
+
+#experience {
+    display: flex;
+    margin-top: 40px;
+    width: 550px;
+    justify-content: space-around;
+}
+
+#projects {
+    width: calc(550px / 2);
+}
+
+
+
+ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+li {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+#skills {
+    margin-left: 80px;
+    width: calc(550px / 2);
+}
+
+.item-skill {
+    display: inline-block;
+    width: max-content;
+    font-size: 14px;
+    border-radius: 100px;
+    padding: 5px 10px;
+    background-color: #dcdcdc;
 }
 
 #picture {
     width: 200px;
     height: 200px;
     border-radius: 100%;
-}
-
-.container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
-}
-
-.dois {
-    margin-left: 30px;
-}
-
-.lista {
-    background-color: #F3EEC3;
-    margin-top: 10px;
-    padding: 10px;
-    border-radius: 20px;
-    width: 400px;
-}
-
-.teste {
-    margin-top: 0;
-    width: fit-content;
-}
-
-ul {
-    list-style: none;
 }
