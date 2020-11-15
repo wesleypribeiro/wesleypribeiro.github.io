@@ -13,7 +13,11 @@ body {
     height: 100%;
 }
 
-#pic1 {
+#pic2 {
+    display: none;
+}
+
+#picture2 {
     display: none;
 }
 
@@ -133,7 +137,7 @@ li {
 
 @media screen and (max-width: 414px) {
     main {
-        margin-top: 20px;
+        margin-top: 5px;
     }
     
     h1 {
@@ -227,19 +231,27 @@ li {
         margin: 5px 5px;
         background-color: #dcdcdc;
     }
-    
-    #pic1 {
-        display: block;
-        text-align: center;
-        margin-top: 15px;
-    }
 
     #pic {
         display: none;
     }
 
     #picture {
+        display: none;
+    }
+
+    #pic2 {
+        display: block;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    #picture2 {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
         width: 170px;
         height: 170px;
+        border-radius: 100%;
     }
 }
