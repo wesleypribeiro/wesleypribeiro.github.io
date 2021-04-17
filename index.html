@@ -5,34 +5,32 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Wesley Paulo Ribeiro - Meu portfólio</title>
-        <link rel="stylesheet" type="text/css" href="style/index.css" />
+        <link rel="stylesheet" href="style/index.css" />
+        <link rel="stylesheet" href="style/bootstrap.min.css" />
     </head>
 
-    <body>
+    <body class="container">
         <header>
-            <nav>
-                <ul>
-                    <li>
-                        <h4><a class="selected" href="#">Sobre mim</a></h4>
-                    </li>
-                    <li>
-                        <h4><a href="projects.html">Projetos</h4></a>
-                    </li>
-                    <li>
-                        <h4><a href="WesleyPaulo_Resume.pdf">Meu currículo</h4></a>
-                    </li>
-                </ul>
+            <nav class="navbar d-flex justify-content-sm-center justify-content-md-end">
+            <ul class="nav d-flex justify-content-between">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Sobre mim</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Projetos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Meu currículo</a>
+                </li>
+              </ul>
             </nav>
         </header>
         <main>
-            <div id="container">
+            <div class="d-flex justify-content-between">
                 <section id="about-me">
                     <article id="title">
                         <h1>Sobre <span>mim</span></h1>
                         <h3>Me chamo Wesley Paulo Ribeiro, residente de São José dos Campos, interior de SP</h3>
-                        <article id="pic2">
-                            <img id="picture2" src="/img/perfil.jpg" alt="Uma foto minha" />
-                        </article>
                     </article>
                     <article id="description"> Formado em Análise e Desenvolvimento de Sistemas pela faculdade Estácio
                         no primeiro semestre de 2020, estou procurando me envolver na área de desenvolvimento e me
