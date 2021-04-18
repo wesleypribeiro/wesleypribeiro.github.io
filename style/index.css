@@ -91,6 +91,7 @@ span {
 
 #about-me {
     justify-content: left;
+    margin-bottom: 20px;
 }
 
 #title {
@@ -161,20 +162,8 @@ li {
     border-radius: 100%;
 }
 
-footer {
-    position: fixed;
-    width: 1000px;
-    bottom: 0;
-    padding: 15px 0;
-    font-size: 12px;
-}
-
 hr {
     margin-bottom: 10px;
-}
-
-footer p {
-    margin-left: 10px;
 }
 
 .resume-li li {
@@ -296,16 +285,8 @@ footer p {
         height: 170px;
         border-radius: 100%;
     }
-    footer {
-        position: relative;
-        padding: 15px 0;
-        font-size: 12px;
-    }
     hr {
         margin-bottom: 10px;
-    }
-    footer p {
-        margin-left: 10px;
     }
     .resume-li li {
         font-size: 15px;
