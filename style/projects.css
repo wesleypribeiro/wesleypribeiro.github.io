@@ -111,9 +111,21 @@ nav ul li a {
   width: 80%;
 }
 
+.card-title {
+  height: 4.625rem;
+}
+
 .card-title h1 a {
   color: #000;
   font-weight: 700;
+}
+
+.card-summary {
+  height: 6.75rem;
+}
+
+.card-skills {
+  height: 4.5rem;
 }
 
 .card-skills ul {
