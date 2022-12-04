@@ -1,124 +1,293 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Wesley Paulo Ribeiro - Meu portfólio</title>
-        <link rel="stylesheet" type="text/css" href="style/index.css" />
-    </head>
-
-    <body>
-        <header>
-            <nav>
-                <ul>
-                    <li>
-                        <h4><a class="selected" href="#">Sobre mim</a></h4>
-                    </li>
-                    <li>
-                        <h4><a href="projects.html">Projetos</h4></a>
-                    </li>
-                    <li>
-                        <h4><a href="WesleyPaulo_Resume.pdf">Meu currículo</h4></a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <div id="container">
-                <section id="about-me">
-                    <article id="title">
-                        <h1>Sobre <span>mim</span></h1>
-                        <h3>Me chamo Wesley Paulo Ribeiro, residente de São José dos Campos, interior de SP</h3>
-                        <article id="pic2">
-                            <img id="picture2" src="/img/perfil.jpg" alt="Uma foto minha" />
-                            <article id="social-networks">
-                                <a href="https://github.com/wesleypribeiro" target="_blank">
-                                    <img src="img/github.png" alt="Github">
-                                </a>
-                                <a href="https://www.linkedin.com/in/wesleypribeiro/" target="_blank">
-                                    <img src="img/linkedin.png" alt="Linkedin">
-                                </a>
-                                <a href="https://www.facebook.com/wesleybehbs" target="_blank">
-                                    <img src="img/facebook.png" alt="Facebook">
-                                </a>
-                                <a href="https://www.instagram.com/wesleypribeiro_" target="_blank">
-                                    <img src="img/instagram.png" alt="Instagram">
-                                </a>
-                            </article>
-                            <a href="mailto:wesley_paulo00@hotmail.com">wesley_paulo00@hotmail.com</a>
-                        </article>
-                    </article>
-                    <article id="description"> Formado em Análise e Desenvolvimento de Sistemas pela faculdade Estácio
-                        no primeiro semestre de 2020, estou procurando me envolver na área de desenvolvimento e me
-                        tornar um programador. Atualmente estou fazendo curso de Desenvolvimento Full Stack pela escola
-                        Trybe. Sou uma pessoa comprometida, séria no que faz e paciente. Buscando sempre meu
-                        desenvolvimento pessoal. </article>
-                    <section id="experience">
-                        <article id="projects">
-                            <h3 id="projects-title">Formação acadêmica</h3>
-                            <ul>
-                                <li>
-                                    <h4>Desenvolvimento Full Stack</h4>
-                                    <h5>Escola Trybe | Curso Livre</h5>Set 2020 - Presente
-                                </li>
-                                <li>
-                                    <h4>Análise e Desenv. de Sistemas</h4>
-                                    <h5>Faculdade Estácio | Curso Superior</h5>Concluído em 2020
-                                </li>
-                                <li>
-                                    <h4>Desenvolvimento de sistemas</h4>
-                                    <h5>Senac | Curso Técnico</h5>Concluído em 2013
-                                </li>
-                                <li>
-                                    <h4>Operação e manut. computadores</h4>
-                                    <h5>Senac | Curso Técnico</h5>Concluído em 2012
-                                </li>
-                            </ul>
-                        </article>
-                        <article id="skills">
-                            <h3 id="projects-title">Minhas habilidades</h3>
-                            <ul>
-                                <li class="item-skill">React</li>
-                                <li class="item-skill">Redux</li>
-                                <li class="item-skill">Context API</li>
-                                <li class="item-skill">Javascript</li>
-                                <li class="item-skill">HTML5</li>
-                                <li class="item-skill">CSS</li>
-                                <li class="item-skill">Bootstrap</li>
-                                <li class="item-skill">styled-components</li>
-                                <li class="item-skill">MySQL</li>
-                                <li class="item-skill">MongoDB</li>
-                                <li class="item-skill">Node</li>
-                                <li class="item-skill">Testes Unitários</li>
-                                <li class="item-skill">Jest</li>
-                                <li class="item-skill">RTL</li>
-                                <li class="item-skill">Git</li>
-                                <li class="item-skill">Linux</li>
-                            </ul>
-                        </article>
-                    </section>
-                </section>
-                <section id="pic">
-                    <img id="picture" src="img/perfil.jpg" alt="Uma foto minha" />
-                    <article id="social-networks">
-                        <a href="https://github.com/wesleypribeiro" target="_blank">
-                            <img src="img/github.png" alt="Github">
-                        </a>
-                        <a href="https://www.linkedin.com/in/wesley-paulo-ribeiro/" target="_blank">
-                            <img src="img/linkedin.png" alt="Linkedin">
-                        </a>
-                        <a href="https://www.facebook.com/wesleybehbs" target="_blank">
-                            <img src="img/facebook.png" alt="Facebook">
-                        </a>
-                        <a href="https://www.instagram.com/wesleypribeiro_" target="_blank">
-                            <img src="img/instagram.png" alt="Instagram">
-                        </a>
-                    </article>
-                    <a href="mailto:wesley_paulo00@hotmail.com">wesley_paulo00@hotmail.com</a>
-                </section>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wesley Paulo Ribeiro - Meu portfólio</title>
+    <link rel="stylesheet" type="text/css" href="style/index.css" />
+    <script src="https://kit.fontawesome.com/c87f8b9ccb.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Wesley P. Ribeiro</h1>
+      <div class="navbar">
+        <div class="heading">
+          <a href="#hamburger-icon" onclick="gfgMenu()">
+              <i class="fa-solid fa-bars"></i>
+            </a>
+          </div>
+          <h1>Wesley P. Ribeiro</h1>
+          <div class="links-menu">
+            <a href="#home" class="links">Home</a>
+            <a href="#skills" class="links">Skills</a>
+            <a href="#experiences" class="links">Experiencia</a>
+            <a href="#projects" class="links">Projetos</a>
+            <a href="#contact" class="links">Contato</a>
+          </div>
+          <a href="#"><i class="fa-solid fa-lightbulb-on"></i></a>
+      </div>
+      <nav>
+        <ul>
+              <li>
+                <a href="#home" class="links">Home</a>
+              </li>
+              <li>
+                <a href="#skills" class="links  scrollToTopBtn">Skills</a>
+              </li>
+              <li>
+                <a href="#experiences" class="links" target="#experiences">Experiencia</a>
+              </li>
+              <li>
+                <a href="#projects" class="links">Projetos</a>
+              </li>
+              <li>
+                <a href="#contact" class="links">Contato</a>
+              </li>
+            </ul>
+          </div>
+        </ul>
+      </nav>
+    </header>
+    <div class="content">
+      <section id="home">
+        <div class="pic-profile">
+          <div>
+            <img class="img-fluid" src="img/perfil.jpg" />
+          </div>
+          <div class="data-profile">
+            <h3>Wesley Paulo Ribeiro</h3>
+            <h4>Desenvolvedor Web Full-Stack</h4>
+          </div>
+          <div class="social-profile">
+            <a href="mailto:wesley_paulo00@hotmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://github.com/wesleypribeiro" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/wesley-paulo-ribeiro/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://wesleypribeiro.github.io/WesleyPaulo_Resume.pdf" target="_blank"><img src="img/cv3.png"></a>
+          </div>
+        </div>
+        <div class="biography-profile">
+          <div class="ola">
+            <h2>Biografia</h2>
+            <p>
+              Me chamo Wesley Paulo Ribeiro, residente de São José dos Campos,
+              interior de SP. Atualmente sou <strong>Desenvolvedor Web Full-Stack</strong> na GAP Sistemas, me formei em Análise e Desenvolvimento de Sistemas pela faculdade Estácio no primeiro semestre de 2020, e conclui um curso de Desenvolvimento Full Stack pela escola Trybe em 2021. 
+            </p>
+            <p>
+              Sou uma pessoa comprometida, séria no que faz e paciente. Buscando sempre meu desenvolvimento pessoal e profissional.
+            </p>
+          </div>
+          <div class="about-container">
+            <div class="interests">
+              <h5>Interesses</h5>
+              <ul>
+                <li>Desenvolvimento Back-end</li>
+                <li>Desenvolvimento Front-end</li>
+                <li>Cloud Computing</li>
+                <li>Internet of things</li>
+              </ul>
             </div>
-        </main>
-    </body>
+            <div class="education">
+              <h5>Formação</h5>
+              <ul>
+                <li>
+                  <i class="fa-solid fa-graduation-cap"> </i>Desenvolvimento Full-Stack, 2021
+                  <div class="description">
+                    Trybe
+                  </div>
+                </li>
+                <li>
+                  <i class="fa-solid fa-graduation-cap"> </i>Análise e Desenv. de Sistemas, 2020
+                  <div class="description">
+                    Faculdade Estácio
+                  </div>
+                </li>
+                <li>
+                  <i class="fa-solid fa-graduation-cap"> </i>Desenvolvimento de Sistemas, 2013
+                  <div class="description">
+                    Senac
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="skills">
+        <div class="container">
+          <h2>Skills</h2>
+          <div class="skills-list">
+            <div class="skill">
+              <i class="fa-brands fa-react"></i>
+              <h5>React</h5>
+              <p>Redux, Context API, React Native, etc.</p>
+            </div>
+            <div class="skill">
+              <i class="fa-brands fa-node"></i>
+              <h5>Nodejs</h5>
+              <p>Axios, Express, Integração de APIs</p>
+            </div>
+            <div class="skill">
+              <i class="fa-brands fa-aws"></i>
+              <h5>Serviços na nuvem</h5>
+              <p>AWS EC2, Lambda, CloudFormation, CloudWatch, etc.</p>
+            </div>
+            <div class="skill">
+              <i class="fa-solid fa-database"></i>
+              <h5>Banco de dados</h5>
+              <p>MySQL, Mongo, Relacionais, Não relacionais</p>
+            </div>
+            <div class="skill">
+              <i class="fa-brands fa-css3-alt"></i>
+              <h5>Estilização de páginas</h5>
+              <p>CSS, Bootstrap, Tailwind, Styled-components</p>
+            </div>
+            <div class="skill">
+              <i class="fa-brands fa-html5"></i>
+              <h5>HTML5</h5>
+              <p>Javascript, Web semantica, etc.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="experiences">
+        <div><h2>Experiencia</h2></div> 
+      <div class="timeline">
+        <div class="container-tl right">
+          <div class="content-tl">
+            <h6>Desenvolvedor Web Full-Stack</h6>
+            <p class="company"><a href="https://sistemasgap.com.br/" target="_blank">GAP Sistemas</a></p>
+            <p class="date">Jul 2021 - Presente • Uberlandia - MG</p>
+            <p class="about">Desenvolvimento de novas features e manutenção no código dos sistemas da empresa, atuando em todo o stack de back, front, banco de dados e principais serviços em nuvem da AWS.</p>
+          </div>
+        </div>
+        <div class="container-tl left">
+          <div class="content-tl">
+            <h6>Estagiário de TI</h6>
+            <p class="company"><a href="https://www.sindcomercio.com.br/" target="_blank">SINDCOM - Sindicato do Comércio</a></p>
+            <p class="date">Jun 2017 - Jan 2018 • São José dos Campos - SP</p>
+            <p class="about">
+              <ul class="attributions">
+                <li>Prestar suporte aos funcionários</li>
+                <li>Fazer manutenção nos computadores da empresa</li>
+                <li>Atender e prestar suporte por telefone aos clientes da empresa</li>
+                <li>Prestar manutenção nos sistemas e máquinas das empresas parceiras e clientes</li>
+            </ul></p>
+          </div>
+        </div>
+        <div class="container-tl right">
+          <div class="content-tl">
+            <h6>Desenvolvedor freelance</h6>
+            <p class="company">CanionTI</p>
+            <p class="date">Jan 2017 - Mar 2017 • São José dos Campos - SP</p>
+            <p class="about">Projetei e desenvolvi sistemas conforme pedido de terceiros a
+              empresa. Em destaque, desenvolvi um sistema de reserva de mesas para restaurante em C#</p>
+          </div>
+        </div>
+      </div>
+      </section>
+      <section id="projects">
+        <div class="container">
+          <h2>Projetos</h2>
+          <div class="projects-container">
+            <div class="project">
+              <h5><a href="https://wesleypribeiro.github.io/KitchenMemories/" target="_blank">Kitchen Memories</a></h5>
+              <div class="project-about">
+                <p>Um aplicativo de receitas de comidas e bebidas onde é possível, criar sua conta e armazenar as receitas favoritas e feitas. Ps.: Logar com email e senha ficticia de 8 caracteres</p>
+                <img src="img/KitchenMemories.png" width="150px" />
+              </div>
+              <div class="btn-links">
+                <a href="https://github.com/wesleypribeiro/KitchenMemories" target="_blank" class="btn btn-sm"><i class="fa-brands fa-github"></i> Código</a>
+              </div>
+            </div>
+            <div class="project">
+              <h5><a href="https://wesleypribeiro.github.io/TheBurger/" target="_blank">The Burger</a></h5>
+              <div class="project-about">
+                <p>Uma comanda digital e interativa para fazer pedidos em uma hamburgueria fictícia. Inspirada pelo totem da Hamburgueria Jeronimo</p>
+                <img src="img/TheBurger.png" width="150px" />
+              </div>
+              <div class="btn-links">
+                <a href="https://github.com/wesleypribeiro/TheBurger" target="_blank" class="btn btn-sm"><i class="fa-brands fa-github"></i> Código</a>
+              </div>
+            </div>
+            <div class="project">
+              <h5><a href="https://wesleypribeiro.github.io/GigaWallet/" target="_blank">Gigawallet</a></h5>
+              <div class="project-about">
+                <p>Um sistema para gerenciamento de finanças com conversor de valor de uma moeda para outra se utlizando de uma API externa. Ps.: Logar com email e senha ficticia de 8 caracteres</p>
+                <img src="img/Gigawallet.png" width="150px" />
+              </div>
+              <div class="btn-links">
+                <a href="https://github.com/wesleypribeiro/GigaWallet" target="_blank" class="btn btn-sm"><i class="fa-brands fa-github"></i> Código</a>
+              </div>
+            </div>
+            <div class="project">
+              <h5><a href="https://wesleypribeiro.github.io/todo-list/" target="_blank">Minha Lista de Tarefas</a></h5>
+              <div class="project-about">
+                <p>Um simples aplicativo gerenciador e de criação de lista de tarefas</p>
+                <img src="img/TodoList.png" width="150px" />
+              </div>
+              <div class="btn-links">
+                <a href="https://github.com/wesleypribeiro/todo-list" target="_blank" class="btn btn-sm"><i class="fa-brands fa-github"></i> Código</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <h2>Contato</h2>
+        <div class="contact-container">
+          <form
+              action="https://formspree.io/f/mzbwlkqj"
+              method="POST"
+            >
+              <input placeholder="Nome" type="name" name="name">
+              <input placeholder="E-mail" type="email" name="email">
+              <textarea placeholder="Mensagem" name="message"></textarea>
+              <button class="btn btn-sm" type="submit">Enviar</button>
+            </form>
+        </div>
+      </section>
+      <section id="end">
+        © Wesley Paulo Ribeiro
+        <div class="up">
+          <a href="#home"><i class="fa-solid fa-chevron-up"></i></a>
+        </div>
+      </section>
+    </div>
+  </body>
+  <script>
+    const li = document.querySelectorAll(".links");
+    const sec = document.querySelectorAll("section");
 
+    function activeMenu() {
+      let len = sec.length;
+      while (--len && window.scrollY + 70 < sec[len].offsetTop){}
+      li.forEach(ltx => ltx.classList.remove("active"));
+      li[len].classList.add("active");
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    function gfgMenu() {
+      const GFG = document.querySelector('.links-menu');
+
+      if (GFG.style.display === "none") {
+          GFG.style.display = "block";
+      }
+      else {
+          GFG.style.display = "none";
+      }
+    }
+    
+    gfgMenu();
+    activeMenu();
+    window.addEventListener("scroll", activeMenu);
+  </script>
 </html>
