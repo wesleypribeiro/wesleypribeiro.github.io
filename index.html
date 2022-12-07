@@ -19,7 +19,6 @@
           <h1>Wesley P. Ribeiro</h1>
           <div class="links-menu">
             <a href="#home" class="links-mobile">Home</a>
-            <a href="#skills" class="links-mobile">Skills</a>
             <a href="#experiences" class="links-mobile">Experiencia</a>
             <a href="#projects" class="links-mobile">Projetos</a>
             <a href="#contact" class="links-mobile">Contato</a>
@@ -30,9 +29,6 @@
         <ul>
               <li>
                 <a href="#home" class="links">Home</a>
-              </li>
-              <li>
-                <a href="#skills" class="links">Skills</a>
               </li>
               <li>
                 <a href="#experiences" class="links">Experiencia</a>
@@ -262,7 +258,7 @@
   </body>
   <script>
     const li = document.querySelectorAll(".links");
-    const sec = document.querySelectorAll("section");
+    const sec = document.querySelectorAll('section:not([id*="skills"]');
 
     const liMobile = document.querySelectorAll(".links-mobile");
 
