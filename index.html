@@ -18,11 +18,11 @@
           </div>
           <h1>Wesley P. Ribeiro</h1>
           <div class="links-menu">
-            <a href="#home" class="links">Home</a>
-            <a href="#skills" class="links">Skills</a>
-            <a href="#experiences" class="links">Experiencia</a>
-            <a href="#projects" class="links">Projetos</a>
-            <a href="#contact" class="links">Contato</a>
+            <a href="#home" class="links-mobile">Home</a>
+            <a href="#skills" class="links-mobile">Skills</a>
+            <a href="#experiences" class="links-mobile">Experiencia</a>
+            <a href="#projects" class="links-mobile">Projetos</a>
+            <a href="#contact" class="links-mobile">Contato</a>
           </div>
           <a href="#"><i class="fa-solid fa-lightbulb-on"></i></a>
       </div>
@@ -32,10 +32,10 @@
                 <a href="#home" class="links">Home</a>
               </li>
               <li>
-                <a href="#skills" class="links  scrollToTopBtn">Skills</a>
+                <a href="#skills" class="links">Skills</a>
               </li>
               <li>
-                <a href="#experiences" class="links" target="#experiences">Experiencia</a>
+                <a href="#experiences" class="links">Experiencia</a>
               </li>
               <li>
                 <a href="#projects" class="links">Projetos</a>
@@ -71,6 +71,12 @@
             <p>
               Me chamo Wesley Paulo Ribeiro, residente de São José dos Campos,
               interior de SP. Atualmente sou <strong>Desenvolvedor Web Full-Stack</strong> na GAP Sistemas, me formei em Análise e Desenvolvimento de Sistemas pela faculdade Estácio no primeiro semestre de 2020, e conclui um curso de Desenvolvimento Full Stack pela escola Trybe em 2021. 
+            </p>
+            <p>
+              Amo a área de desenvolvimento de sistemas desde a minha adolescência quando pensava que me tornaria simplesmente um hacker quando aprendesse a programar!
+              Comecei estudando por conta com alguns blogs na internet e alguns livros, desenvolvi pequenos aplicativos em Python.
+              Em 2012 fiz meu primeiro curso na área, Curso técnico em Informática pelo Senac.
+              <!-- Lá aprendi Java, POO, Modelagem de Dados, Banco de Dados, Segurança da Informação. -->
             </p>
             <p>
               Sou uma pessoa comprometida, séria no que faz e paciente. Buscando sempre meu desenvolvimento pessoal e profissional.
@@ -258,11 +264,16 @@
     const li = document.querySelectorAll(".links");
     const sec = document.querySelectorAll("section");
 
+    const liMobile = document.querySelectorAll(".links-mobile");
+
     function activeMenu() {
       let len = sec.length;
       while (--len && window.scrollY + 70 < sec[len].offsetTop){}
       li.forEach(ltx => ltx.classList.remove("active"));
       li[len].classList.add("active");
+
+      liMobile.forEach(ltx => ltx.classList.remove("active"));
+      liMobile[len].classList.add("active");
     }
 
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -286,7 +297,6 @@
       }
     }
     
-    gfgMenu();
     activeMenu();
     window.addEventListener("scroll", activeMenu);
   </script>

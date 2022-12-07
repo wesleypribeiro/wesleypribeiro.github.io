@@ -35,7 +35,7 @@ header {
     display: none;
 }
 
- .active {
+.active {
     font-weight: bold;
  }
 
@@ -106,18 +106,13 @@ nav ul li a {
     display: flex;
     padding: 4.6875rem 0;
     justify-content: space-between;
-    width: 80%;
-    height: 100vh;
+    max-width: 67.5rem;
 }
 
 #home .img-fluid {
     width: 16.875rem;
     height: 16.875rem;
     border-radius: 100%;
-}
-
-#home .pic-profile {
-    width: 25%;
 }
 
 .data-profile {
@@ -171,6 +166,7 @@ nav ul li a {
     margin-bottom: 1.25rem;
     font-size: 1.125rem;
     letter-spacing: .0313rem;
+    line-height: 1.5625rem;
 }
 
 #home .about-container ul {
@@ -179,6 +175,7 @@ nav ul li a {
 
 #home .about-container {
     display: flex;
+    padding-top: 3.125rem;
 }
 
 #home .about-container ul li {
@@ -514,11 +511,7 @@ nav ul li a {
   @media screen and (max-width: 1024px) {
 
     #home {
-        height: auto
-    }
-
-    #home .biography-profile {
-        padding-left: 6.25rem;
+        height: auto;
     }
 
     #home .about-container {
@@ -531,11 +524,6 @@ nav ul li a {
 
     .data-profile {
         white-space: nowrap;
-        margin-left: 3.125rem
-    }
-
-    .social-profile {
-        margin-left: 3.125rem
     }
 
     #skills {
