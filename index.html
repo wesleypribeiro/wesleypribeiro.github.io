@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wesley Paulo Ribeiro - Meu portfólio</title>
-    <link rel="stylesheet" type="text/css" href="style/index.css" />
+    <title data-lang-str="my-portfolio">Wesley Paulo Ribeiro - Meu portfólio</title>
+    <link rel="stylesheet" type="text/css" href="style/light-theme.css" id="theme-link" />
     <script src="https://kit.fontawesome.com/c87f8b9ccb.js" crossorigin="anonymous"></script>
   </head>
   <body>
@@ -19,30 +19,47 @@
           <h1>Wesley P. Ribeiro</h1>
           <div class="links-menu">
             <a href="#home" class="links-mobile">Home</a>
-            <a href="#experiences" class="links-mobile">Experiencia</a>
-            <a href="#projects" class="links-mobile">Projetos</a>
-            <a href="#contact" class="links-mobile">Contato</a>
+            <a href="#experiences" class="links-mobile" data-lang-str="experiences"></a>
+            <a href="#projects" class="links-mobile" data-lang-str="projects"></a>
+            <a href="#contact" class="links-mobile" data-lang-str="contact"></a>
           </div>
           <a href="#"><i class="fa-solid fa-lightbulb-on"></i></a>
       </div>
       <nav>
         <ul>
-              <li>
-                <a href="#home" class="links">Home</a>
-              </li>
-              <li>
-                <a href="#experiences" class="links">Experiencia</a>
-              </li>
-              <li>
-                <a href="#projects" class="links">Projetos</a>
-              </li>
-              <li>
-                <a href="#contact" class="links">Contato</a>
-              </li>
-            </ul>
+          <li>
+            <a href="#home" class="links">Home</a>
+          </li>
+          <li>
+            <a href="#experiences" class="links" data-lang-str="experiences"></a>
+          </li>
+          <li>
+            <a href="#projects" class="links" data-lang-str="projects"></a>
+          </li>
+          <li>
+            <a href="#contact" class="links" data-lang-str="contact"></a>
+          </li>
+        </ul>
           </div>
         </ul>
       </nav>
+      <div class="btn-toggle" style="cursor: pointer; width: .9375rem; height: .9375rem;">
+        <i class="fa-solid fa-moon" id="theme-icon"></i>
+      </div>
+      <div class="nav-wrapper">
+        <div class="sl-nav">
+          <ul>
+            <li><b id="selected-language"></b> <i class="fa fa-angle-down" aria-hidden="true"></i>
+              <div class="triangle"></div>
+              <ul>
+                <li><i class="sl-flag flag-usa"><div></div></i> <span name="btn-translate" data-lang="en">EN</span></li>
+                <li><i class="sl-flag flag-br"><div></div></i> <span name="btn-translate"  data-lang="pt-br">PT</span></li>
+                <li><i class="sl-flag flag-es"><div></div></i> <span name="btn-translate" data-lang="es">ES</span></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
     <div class="content">
       <section id="home">
@@ -52,7 +69,7 @@
           </div>
           <div class="data-profile">
             <h3>Wesley Paulo Ribeiro</h3>
-            <h4>Desenvolvedor Web Full-Stack</h4>
+            <h4 data-lang-str="data-profile"></h4>
           </div>
           <div class="social-profile">
             <a href="mailto:wesley_paulo00@hotmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
@@ -63,52 +80,27 @@
         </div>
         <div class="biography-profile">
           <div class="ola">
-            <h2>Biografia</h2>
-            <p>
-              Me chamo Wesley Paulo Ribeiro, residente de São José dos Campos,
-              interior de SP. Atualmente sou <strong>Desenvolvedor Web Full-Stack</strong> na GAP Sistemas, me formei em Análise e Desenvolvimento de Sistemas pela faculdade Estácio no primeiro semestre de 2020, e conclui um curso de Desenvolvimento Full Stack pela escola Trybe em 2021. 
-            </p>
-            <p>
-              Amo a área de desenvolvimento de sistemas desde a minha adolescência quando pensava que me tornaria simplesmente um hacker quando aprendesse a programar!
-              Comecei estudando por conta com alguns blogs na internet e alguns livros, desenvolvi pequenos aplicativos em Python.
-              Em 2012 fiz meu primeiro curso na área, Curso técnico em Informática pelo Senac.
-              <!-- Lá aprendi Java, POO, Modelagem de Dados, Banco de Dados, Segurança da Informação. -->
-            </p>
-            <p>
-              Sou uma pessoa comprometida, séria no que faz e paciente. Buscando sempre meu desenvolvimento pessoal e profissional.
-            </p>
+            <h2 data-lang-str="biography-title"></h2>
+            <p data-lang-str="biography-text1"></p>
+            <p data-lang-str="biography-text2"></p>
+            <p data-lang-str="biography-text3"></p>
           </div>
           <div class="about-container">
             <div class="interests">
-              <h5>Interesses</h5>
+              <h5 data-lang-str="interests-title">Interesses</h5>
               <ul>
-                <li>Desenvolvimento Back-end</li>
-                <li>Desenvolvimento Front-end</li>
+                <li data-lang-str="interests-dev-back"></li>
+                <li data-lang-str="interests-dev-front"></li>
                 <li>Cloud Computing</li>
                 <li>Internet of things</li>
               </ul>
             </div>
             <div class="education">
-              <h5>Formação</h5>
+              <h5 data-lang-str="education-title">Formação</h5>
               <ul>
-                <li>
-                  <i class="fa-solid fa-graduation-cap"> </i>Desenvolvimento Full-Stack, 2021
-                  <div class="description">
-                    Trybe
-                  </div>
-                </li>
-                <li>
-                  <i class="fa-solid fa-graduation-cap"> </i>Análise e Desenv. de Sistemas, 2020
-                  <div class="description">
-                    Faculdade Estácio
-                  </div>
-                </li>
-                <li>
-                  <i class="fa-solid fa-graduation-cap"> </i>Desenvolvimento de Sistemas, 2013
-                  <div class="description">
-                    Senac
-                  </div>
-                </li>
+                <li data-lang-str="education-trybe"></li>
+                <li data-lang-str="education-estacio"></li>
+                <li data-lang-str="education-senac"></li>
               </ul>
             </div>
           </div>
@@ -126,75 +118,70 @@
             <div class="skill">
               <i class="fa-brands fa-node"></i>
               <h5>Nodejs</h5>
-              <p>Axios, Express, Integração de APIs</p>
+              <p data-lang-str="skills-nodejs"></p>
             </div>
             <div class="skill">
               <i class="fa-brands fa-aws"></i>
-              <h5>Serviços na nuvem</h5>
+              <h5 data-lang-str="skills-cloud-engineering"></h5>
               <p>AWS EC2, Lambda, CloudFormation, CloudWatch, etc.</p>
             </div>
             <div class="skill">
               <i class="fa-solid fa-database"></i>
-              <h5>Banco de dados</h5>
-              <p>MySQL, Mongo, Relacionais, Não relacionais</p>
+              <h5 data-lang-str="skills-database-title"></h5>
+              <p data-lang-str="skills-database"></p>
             </div>
             <div class="skill">
               <i class="fa-brands fa-css3-alt"></i>
-              <h5>Estilização de páginas</h5>
+              <h5 data-lang-str="skills-styling-title"></h5>
               <p>CSS, Bootstrap, Tailwind, Styled-components</p>
             </div>
             <div class="skill">
               <i class="fa-brands fa-html5"></i>
               <h5>HTML5</h5>
-              <p>Javascript, Web semantica, etc.</p>
+              <p data-lang-str="skills-html5"></p>
             </div>
           </div>
         </div>
       </section>
       <section id="experiences">
-        <div><h2>Experiencia</h2></div> 
+        <div><h2 data-lang-str="experiences"></h2></div> 
       <div class="timeline">
         <div class="container-tl right">
           <div class="content-tl">
-            <h6>Desenvolvedor Web Full-Stack</h6>
+            <h6 data-lang-str="experiences-gap-title"></h6>
             <p class="company"><a href="https://sistemasgap.com.br/" target="_blank">GAP Sistemas</a></p>
-            <p class="date">Jul 2021 - Presente • Uberlandia - MG</p>
-            <p class="about">Desenvolvimento de novas features e manutenção no código dos sistemas da empresa, atuando em todo o stack de back, front, banco de dados e principais serviços em nuvem da AWS.</p>
+            <p class="date" data-lang-str="experiences-gap-date"></p>
+            <p class="about" data-lang-str="experiences-gap-about"></p>
           </div>
         </div>
         <div class="container-tl left">
           <div class="content-tl">
-            <h6>Estagiário de TI</h6>
+            <h6 data-lang-str="experiences-sindcom-title"></h6>
             <p class="company"><a href="https://www.sindcomercio.com.br/" target="_blank">SINDCOM - Sindicato do Comércio</a></p>
-            <p class="date">Jun 2017 - Jan 2018 • São José dos Campos - SP</p>
+            <p class="date" data-lang-str="experiences-sindcom-date"></p>
             <p class="about">
-              <ul class="attributions">
-                <li>Prestar suporte aos funcionários</li>
-                <li>Fazer manutenção nos computadores da empresa</li>
-                <li>Atender e prestar suporte por telefone aos clientes da empresa</li>
-                <li>Prestar manutenção nos sistemas e máquinas das empresas parceiras e clientes</li>
-            </ul></p>
+              <ul class="attributions" data-lang-str="experiences-sindcom-attributions"></ul>
+            </p>
           </div>
         </div>
         <div class="container-tl right">
           <div class="content-tl">
-            <h6>Desenvolvedor freelance</h6>
+            <h6 data-lang-str="experiences-canionti-title"></h6>
             <p class="company">CanionTI</p>
-            <p class="date">Jan 2017 - Mar 2017 • São José dos Campos - SP</p>
-            <p class="about">Projetei e desenvolvi sistemas conforme pedido de terceiros a
-              empresa. Em destaque, desenvolvi um sistema de reserva de mesas para restaurante em C#</p>
+            <p class="date" data-lang-str="experiences-canionti-date">Jan 2017 - Mar 2017 • São José dos Campos - SP</p>
+            <p class="about" data-lang-str="experiences-canionti-about"></p>
           </div>
         </div>
       </div>
       </section>
       <section id="projects">
         <div class="container">
-          <h2>Projetos</h2>
+          <h2 data-lang-str="projects"></h2>
           <div class="projects-container">
             <div class="project">
               <h5><a href="https://wesleypribeiro.github.io/KitchenMemories/" target="_blank">Kitchen Memories</a></h5>
               <div class="project-about">
-                <p>Um aplicativo de receitas de comidas e bebidas onde é possível, criar sua conta e armazenar as receitas favoritas e feitas. Ps.: Logar com email e senha ficticia de 8 caracteres</p>
+                <p data-lang-str="projects-km-about"></p>
                 <img src="img/KitchenMemories.png" width="150px" />
               </div>
               <div class="btn-links">
@@ -204,7 +191,7 @@
             <div class="project">
               <h5><a href="https://wesleypribeiro.github.io/TheBurger/" target="_blank">The Burger</a></h5>
               <div class="project-about">
-                <p>Uma comanda digital e interativa para fazer pedidos em uma hamburgueria fictícia. Inspirada pelo totem da Hamburgueria Jeronimo</p>
+                <p data-lang-str="projects-tb-about"></p>
                 <img src="img/TheBurger.png" width="150px" />
               </div>
               <div class="btn-links">
@@ -214,7 +201,7 @@
             <div class="project">
               <h5><a href="https://wesleypribeiro.github.io/GigaWallet/" target="_blank">Gigawallet</a></h5>
               <div class="project-about">
-                <p>Um sistema para gerenciamento de finanças com conversor de valor de uma moeda para outra se utlizando de uma API externa. Ps.: Logar com email e senha ficticia de 8 caracteres</p>
+                <p data-lang-str="projects-gw-about"></p>
                 <img src="img/Gigawallet.png" width="150px" />
               </div>
               <div class="btn-links">
@@ -222,9 +209,9 @@
               </div>
             </div>
             <div class="project">
-              <h5><a href="https://wesleypribeiro.github.io/todo-list/" target="_blank">Minha Lista de Tarefas</a></h5>
+              <h5><a href="https://wesleypribeiro.github.io/todo-list/" target="_blank" data-lang-str="projects-todo-title"></a></h5>
               <div class="project-about">
-                <p>Um simples aplicativo gerenciador e de criação de lista de tarefas</p>
+                <p data-lang-str="projects-todo-about"></p>
                 <img src="img/TodoList.png" width="150px" />
               </div>
               <div class="btn-links">
@@ -235,16 +222,16 @@
         </div>
       </section>
       <section id="contact">
-        <h2>Contato</h2>
+        <h2 data-lang-str="contact"></h2>
         <div class="contact-container">
           <form
               action="https://formspree.io/f/mzbwlkqj"
               method="POST"
             >
-              <input placeholder="Nome" type="name" name="name">
-              <input placeholder="E-mail" type="email" name="email">
-              <textarea placeholder="Mensagem" name="message"></textarea>
-              <button class="btn btn-sm" type="submit">Enviar</button>
+              <input placeholder="Nome" type="name" name="name" id="contact-name">
+              <input placeholder="E-mail" type="email" name="email" id="contact-email">
+              <textarea placeholder="Mensagem" name="message" id="contact-message"></textarea>
+              <button class="btn btn-sm" type="submit" id="contact-send">Enviar</button>
             </form>
         </div>
       </section>
@@ -256,44 +243,5 @@
       </section>
     </div>
   </body>
-  <script>
-    const li = document.querySelectorAll(".links");
-    const sec = document.querySelectorAll('section:not([id*="skills"]');
-
-    const liMobile = document.querySelectorAll(".links-mobile");
-
-    function activeMenu() {
-      let len = sec.length;
-      while (--len && window.scrollY + 70 < sec[len].offsetTop){}
-      li.forEach(ltx => ltx.classList.remove("active"));
-      li[len].classList.add("active");
-
-      liMobile.forEach(ltx => ltx.classList.remove("active"));
-      liMobile[len].classList.add("active");
-    }
-
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-        });
-      });
-    });
-
-    function gfgMenu() {
-      const GFG = document.querySelector('.links-menu');
-
-      if (GFG.style.display === "none") {
-          GFG.style.display = "block";
-      }
-      else {
-          GFG.style.display = "none";
-      }
-    }
-    
-    activeMenu();
-    window.addEventListener("scroll", activeMenu);
-  </script>
+  <script src="script.js"></script>
 </html>
