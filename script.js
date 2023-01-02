@@ -94,7 +94,7 @@ let TRANSLATIONS = {
     "biography-text1":
       'I am Wesley Paulo Ribeiro, I live at São José dos Campos, São Paulo - Brazil. I am currently a <strong data-lang-str="biography-current-job">Full-Stack Web Developer</strong> at GAP Sistemas, and I graduated in Systems Analysis and Development from Estácio College in the first semester of 2020. I also completed a Full Stack Development course at Trybe school in 2021.',
     "biography-text2":
-      "I always loved programming, since my adolescence, when I thought I would become a hacker once I learned how to program! I started studying on my own with some internet blogs and books, and developed small applications in Python. In 2012, I took my first programming course, a Technical Course in Computer Science at Senac.",
+      "I always loved programming, since when I was a teenager, when I thought I would become a hacker once I learned how to program! I started studying on my own with some internet blogs and books, and developed small applications in Python. In 2012, I took my first programming course, a Technical Course in Computer Science at Senac.",
     "biography-text3":
       "I am a committed, serious, and patient person. I am always seeking personal and professional development.",
     "biography-current-job": "Full-Stack Web Developer",
@@ -122,20 +122,20 @@ let TRANSLATIONS = {
       "Jun 2017 - Jan 2018 • São José dos Campos - SP, Brazil",
     "experiences-sindcom-title": "Information Technology Intern",
     "experiences-sindcom-attributions":
-      "<li>Provide support to employees</li><li>Perfmon company's computer maintenance</li><li>Answer and provide phone support to the company's customers</li><li>Provide maintenance on the systems and computers of partner and customer companies</li>",
+      "<li>Provide support to employees</li><li>Perform company's computer maintenance</li><li>Answer and provide phone support to the company's customers</li><li>Provide maintenance on the systems and computers of partner and customer companies</li>",
     "experiences-canionti-title": "System developer freelance",
     "experiences-canionti-date":
       "Jan 2017 - Mar 2017 • São José dos Campos - SP, Brazil",
     "experiences-canionti-about":
       "I designed and developed systems as requested by third parties to the company. In one of my best projects as a freelance, I developed a table reservation system for a restaurant in C#.",
     "projects-km-about":
-      "An cooking app about recipes, foods and drinks where you can sign up and save your favorite recipes. Ps.: Sign with an 8 characters email and password",
+      "A cooking app about recipes, foods and drinks where you can sign up and save your favorite recipes. Ps.: Sign in with an 8 characters email and password",
     "projects-tb-about":
       "An interactive and digital menu to place orders at a fictional burger. Inspired by a famous brazilian burger called Jeronimo.",
     "projects-gw-about":
-      "An app for financial management with a value converter from one currency to another using an external API. Ps.: Sign with an 8 characters email and password",
+      "An app for financial management with a value converter from one currency to another using an external API. Ps.: Sign in with an 8 characters email and password",
     "projects-todo-title": "My To-do list",
-    "projects-todo-about": "An simple to-do list management and creator app",
+    "projects-todo-about": "A simple to-do list management and creator app",
   },
   "pt-br": {
     "my-portfolio": "Wesley Paulo Ribeiro - Meu portfólio",
