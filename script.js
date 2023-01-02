@@ -98,6 +98,7 @@ let TRANSLATIONS = {
     "biography-text3":
       "I am a committed, serious, and patient person. I am always seeking personal and professional development.",
     "biography-current-job": "Full-Stack Web Developer",
+    "social-profile": "<a href='mailto:wesley_paulo00@hotmail.com' target='_blank'><i class='fa-solid fa-envelope'></i></a><a href='https://github.com/wesleypribeiro' target='_blank'><i class='fa-brands fa-github'></i></a><a href='https://www.linkedin.com/in/wesleypribeiro/?locale=en_US' target='_blank'><i class='fa-brands fa-linkedin'></i></a><a href='https://wesleypribeiro.github.io/WesleyPaulo_Resume_EN.pdf' target='_blank'><img src='img/cv3.png'></a>",
     "interests-title": "Interests",
     "interests-dev-back": "Back-end Development",
     "interests-dev-front": "Front-end Development",
@@ -151,6 +152,7 @@ let TRANSLATIONS = {
     "biography-text3":
       "Sou uma pessoa comprometida, séria no que faz e paciente. Buscando sempre meu desenvolvimento pessoal e profissional.",
     "biography-current-job": "Desenvolvedor Web Full-Stack",
+    "social-profile": "<a href='mailto:wesley_paulo00@hotmail.com' target='_blank'><i class='fa-solid fa-envelope'></i></a><a href='https://github.com/wesleypribeiro' target='_blank'><i class='fa-brands fa-github'></i></a><a href='https://www.linkedin.com/in/wesleypribeiro' target='_blank'><i class='fa-brands fa-linkedin'></i></a><a href='https://wesleypribeiro.github.io/WesleyPaulo_Resume_PT.pdf' target='_blank'><img src='img/cv3.png'></a>",
     "interests-title": "Interesses",
     "interests-dev-back": "Desenvolvimento Back-end",
     "interests-dev-front": "Desenvolvimento Front-end",
@@ -205,6 +207,7 @@ let TRANSLATIONS = {
     "biography-text3":
       "Sou uma pessoa comprometida, séria no que faz e paciente. Buscando sempre meu desenvolvimento pessoal e profissional.",
     "biography-current-job": "Desarrollador Web Full-Stack",
+    "social-profile": "<a href='mailto:wesley_paulo00@hotmail.com' target='_blank'><i class='fa-solid fa-envelope'></i></a><a href='https://github.com/wesleypribeiro' target='_blank'><i class='fa-brands fa-github'></i></a><a href='https://www.linkedin.com/in/wesleypribeiro/?locale=es_ES' target='_blank'><i class='fa-brands fa-linkedin'></i></a><a href='https://wesleypribeiro.github.io/WesleyPaulo_Resume_ES.pdf' target='_blank'><img src='img/cv3.png'></a>",
     "interests-title": "Intereses",
     "interests-dev-back": "Desarrollo Back-end",
     "interests-dev-front": "Desarrollo Front-end",
