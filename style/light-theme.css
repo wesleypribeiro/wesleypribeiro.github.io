@@ -767,6 +767,7 @@ form textarea:focus {
   .social-profile {
     margin-left: 0;
     margin-right: 0;
+    margin-top: .3125rem;
   }
 
   .social-profile a {
