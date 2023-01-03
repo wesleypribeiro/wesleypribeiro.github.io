@@ -201,7 +201,7 @@ let TRANSLATIONS = {
     "data-profile": "Desarrollador Web Full-Stack",
     "biography-title": "Biografía",
     "biography-text1":
-      'Me llamo Wesley Paulo Ribeiro, residente de São José dos Campos, interior de SP. Actualmente soy <strong data-lang-str="biography-current-job">Desarrollador Web Full-Stack</strong> en GAP Sistemas, me gradué en Análisis y Desarrollo de Sistemas en la universidad Estácio en el primer semestre de 2020, y completé un curso de Desarrollo Full Stack en la escuela Trybe en 2021.',
+      'Me llamo Wesley Paulo Ribeiro, residente de São José dos Campos, SP - Brasil. Actualmente soy <strong data-lang-str="biography-current-job">Desarrollador Web Full-Stack</strong> en GAP Sistemas, me gradué en Análisis y Desarrollo de Sistemas en la universidad Estácio en el primer semestre de 2020, y completé un curso de Desarrollo Full Stack en la escuela Trybe en 2021.',
     "biography-text2":
       "Me encanta el área de desarrollo de sistemas desde mi adolescencia, cuando pensaba que me convertiría simplemente en un hacker cuando aprendiera a programar. Empecé a estudiar por mi cuenta con algunos blogs en internet y algunos libros, desarrollé pequeñas aplicaciones en Python. En 2012 hice mi primer curso en el área, Curso técnico en Informática en el Senac.",
     "biography-text3":
