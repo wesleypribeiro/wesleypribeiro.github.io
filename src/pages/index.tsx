@@ -1,27 +1,30 @@
-import { Email, EmailRounded, GitHub, LinkedIn } from "@mui/icons-material";
+import { Email, EmailRounded, GitHub, LinkedIn, Menu } from "@mui/icons-material";
 import Sidebar from "../components/sidebar";
 import Skills from "./UI/Skills";
 import Project from "./UI/Project";
 import Section from "@/pages/UI/Section";
-import { Fragment } from "react";
+import { Fragment, useState } from "react";
 
 export default function Home() {
+  const [isOpenedSidebar, setIsOpenedSideBar] = useState(false);
+
   return (
     <Fragment>
       <main
         className={`flex min-h-screen pb-20`}
       >
-        <Sidebar />
-        <div className="flex flex-col py-0 px-40 max-w-screen-xl my-0 mx-auto gap-20">
-          <div className="flex justify-center" id="home">
-            <header className="flex h-[100vh] items-center">
+        <Sidebar isOpenedSidebar={isOpenedSidebar} setIsOpenedSideBar={setIsOpenedSideBar} />
+        <div className="flex flex-col py-0 lg:px-40 px-10 lg:max-w-screen-xl max-w-full my-0 mx-auto gap-20">
+          <Menu className="lg:hidden fixed text-[40px] right-[25px] top-[30px] cursor-pointer z-50" onClick={() => setIsOpenedSideBar(!isOpenedSidebar)} />
+          <div className="flex justify-center py-20 lg:py-0" id="home">
+            <header className="flex lg:flex-row flex-col h-[100vh] items-center">
               <div className="rounded-full w-[350px] h-[350px] bg-[url('/profile_pic.jpeg')] bg-cover bg-center" />
-              <div className="p-20 w-[600px] min-[250px] flex flex-col gap-4">
+              <div className="p-20 lg:w-[600px] min-[250px] flex flex-col gap-4 lg:items-start items-center w-full">
                 <h1>HI THERE! I'M</h1>
-                <div className="flex gap-2">
-                  <span className="text-4xl font-bold text-[#B0B0B0]">WESLEY P.</span><span className="text-4xl font-bold"> RIBEIRO</span>
+                <div className="flex gap-2 text-4xl font-bold text-nowrap">
+                  <span className="text-[#B0B0B0]">WESLEY P.</span><span className="text-4xl font-bold"> RIBEIRO</span>
                 </div>
-                <p className="tracking-[1px] text-[1rem] leading-6 text-[#333333] font-light">A <span className="text-[#B0B0B0]">Full Stack Web Developer</span> that always loved programming and is always looking for new challenges.</p>
+                <p className="tracking-[1px] text-[1rem] leading-6 text-[#333333] font-light lg:text-start text-center">A <span className="text-[#B0B0B0]">Full Stack Web Developer</span> that always loved programming and is always looking for new challenges.</p>
                 <div className="flex gap-4 justify-between">
                   <button className="bg-[#2C3E50] text-[#FFFFFF] px-4 py-2 rounded-full transition-all ease-in duration-300 hover:shadow-2xl">Download CV</button>
                   <ul className="flex gap-4">
@@ -107,7 +110,7 @@ export default function Home() {
                 className="mb-9 flex flex-col gap-5"
                 id="contactForm"
               >
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', rowGap: '20px', columnGap: '25px' }}>
+                <div className="grid lg:grid-cols-[repeat(2,1fr)] gap-y-5 gap-x-[25px]">
                   <input type="text" name="name" id="contact-name" placeholder="Your name*" required className="border-[1px] border-[#eee] py-[11px] px-[20px] text-base w-full tracking-[1px] font-semibold focus:border-[1px] focus:border-[#587592] focus:outline-none focus:shadow-[0px_0px_0px_3px_rgba(44,62,80,0.25)]" />
                   <input type="text" name="email" id="contact-email" placeholder="Your Email*" required className="border-[1px] border-[#eee] py-[11px] px-[20px] text-base w-full tracking-[1px] font-semibold focus:border-[1px] focus:border-[#587592] focus:outline-none focus:shadow-[0px_0px_0px_3px_rgba(44,62,80,0.25)]" />
                 </div>
