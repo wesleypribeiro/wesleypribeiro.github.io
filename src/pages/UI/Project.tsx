@@ -11,7 +11,7 @@ interface IProps {
 
 const Project = ({image, title, technologies, description, live, repo}: IProps) => {
   return (
-    <article className="bg-[#fff] p-12 flex gap-8 text-xl border-[1px] border-[#eee] rounded-2xl shadow-sm transition-all ease-in duration-300 hover:shadow-xl">
+    <article className="md:bg-[#fff] w-full md:p-12 p-6 flex lg:flex-row flex-col gap-8 text-xl border-[1px] border-[#eee] rounded-2xl shadow-sm transition-all ease-in duration-300 md:hover:shadow-xl">
       <div className="h-auto">
         <img src={image} className="w-full rounded-[10px] border-[1px] border-[#ddd]" />
       </div>

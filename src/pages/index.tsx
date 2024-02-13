@@ -14,7 +14,7 @@ export default function Home() {
         className={`flex min-h-screen pb-20`}
       >
         <Sidebar isOpenedSidebar={isOpenedSidebar} setIsOpenedSideBar={setIsOpenedSideBar} />
-        <div className="flex flex-col py-0 lg:px-40 px-10 lg:max-w-screen-xl max-w-full my-0 mx-auto gap-20">
+        <div className="flex flex-col py-0 lg:px-40 md:px-10 px-5 lg:max-w-screen-xl max-w-full my-0 mx-auto gap-20">
           <Menu className="lg:hidden fixed text-[40px] right-[25px] top-[30px] cursor-pointer z-50" onClick={() => setIsOpenedSideBar(!isOpenedSidebar)} />
           <div className="flex justify-center py-20 lg:py-0" id="home">
             <header className="flex lg:flex-row flex-col h-[100vh] items-center">
@@ -44,7 +44,7 @@ export default function Home() {
             I am a dedicated and enthusiastic professional in web development. Throughout my journey, I have been building and enhancing my skills.
           </Section>
           <Section introduction="CHECK OUT MY" id="skills" title="SKILLS">
-            <ul style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(80px, 1fr))', gridColumnGap: '50px', gridRowGap: '50px' }}>
+            <ul className="grid md:grid-cols-[repeat(auto-fill,minmax(80px,1fr))] grid-cols-[repeat(3,minmax(80px,1fr))] gap-x-[50px] gap-y-[50px]">
               <Skills src='/skills/react.svg' title='React' />
               <Skills src='/skills/nodejs.svg' title='NodeJS' />
               <Skills src='/skills/aws.svg' title='AWS' />
@@ -97,7 +97,7 @@ export default function Home() {
           </Section>
           <Section introduction="SAY HELLO" id="contact" title="CONTACT">
             <h3 className="font-semibold text-xl mb-6">Get in Touch</h3>
-            <div className="p-4 rounded-lg flex flex-col items-center justify-center border-[#ddd] border-[1px] shadow-md transition-all ease-in duration-300 hover:shadow-xl">
+            <div className="p-4 rounded-lg flex flex-col items-center justify-center border-[#ddd] border-[1px] shadow-md transition-all ease-in duration-300 md:hover:shadow-xl">
               <EmailRounded sx={{ fontSize: '32px' }} />
               <a href='mailto: wesley_paulo00@hotmail.com' className="font-semibold underline">wesley_paulo00@hotmail.com</a>
               <p className="text-sm font-semibold text-[#2C3E50]">Email me</p>
