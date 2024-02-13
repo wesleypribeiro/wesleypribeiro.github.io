@@ -15,7 +15,7 @@ export default function Home() {
       >
         <Sidebar isOpenedSidebar={isOpenedSidebar} setIsOpenedSideBar={setIsOpenedSideBar} />
         <div className="flex flex-col py-0 lg:px-40 md:px-10 px-5 lg:max-w-screen-xl max-w-full my-0 mx-auto gap-20">
-          <Menu className="lg:invisible visible text-[40px] right-[25px] top-[30px] cursor-pointer z-50" onClick={() => setIsOpenedSideBar(!isOpenedSidebar)} />
+          <Menu className="lg:hidden block fixed text-[40px] right-[25px] top-[30px] cursor-pointer z-50" onClick={() => setIsOpenedSideBar(!isOpenedSidebar)} />
           <div className="flex justify-center py-20 lg:py-0" id="home">
             <header className="flex lg:flex-row flex-col h-[100vh] items-center">
               <div className="rounded-full w-[350px] h-[350px] bg-[url('/profile_pic.jpeg')] bg-cover bg-center" />
