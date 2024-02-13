@@ -26,7 +26,7 @@ export default function Home() {
                 </div>
                 <p className="tracking-[1px] text-[1rem] leading-6 text-[#333333] font-light lg:text-start text-center">A <span className="text-[#B0B0B0]">Full Stack Web Developer</span> that always loved programming and is always looking for new challenges.</p>
                 <div className="flex gap-4 justify-between">
-                  <button className="bg-[#2C3E50] text-[#FFFFFF] px-4 py-2 rounded-full transition-all ease-in duration-300 hover:shadow-2xl">Resume</button>
+                  <button className="bg-[#2C3E50] text-[#FFFFFF] px-4 py-2 rounded-full transition-all ease-in duration-300 hover:shadow-2xl" onClick={() => window.open('/WesleyPaulo_Resume_EN.pdf', '_blank')}>Resumé</button>
                   <ul className="flex gap-4">
                     <a href='https://www.linkedin.com/in/wesleypribeiro' target="_blank"><li className="border-2 border-[#eee] bg-[#FFF] p-2 rounded-md shadow-2xl hover:shadow-xl cursor-pointer transition-all ease-in duration-300"><LinkedIn style={{ color: '#2C3E50' }} /></li></a>
                     <a href='https://github.com/wesleypribeiro' target="_blank"><li className="border-2 border-[#eee] bg-[#FFF] p-2 rounded-md shadow-2xl hover:shadow-xl cursor-pointer transition-all ease-in duration-300"><GitHub style={{ color: '#2C3E50' }} /></li></a>
