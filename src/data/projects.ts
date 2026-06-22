@@ -35,6 +35,17 @@ export interface Project {
 
 const projects: Project[] = [
   {
+    title: 'LeadFlow AI',
+    technologies: ['Next.js', 'Node.js', 'PostgreSQL', 'Prisma', 'Groq AI'],
+    description: {
+      en: 'An AI-powered lead qualification and management platform with a real-time dashboard and webhook integrations.',
+      pt: 'Uma plataforma de qualificação e gestão de leads baseada em IA com dashboard em tempo real e integrações via webhooks.',
+    },
+    image: '/projects/LeadflowAI.png',
+    live: 'https://leadflow-ai-eight-tawny.vercel.app/',
+    repo: 'https://github.com/wesleypribeiro/leadflow-ai',
+  },
+  {
     title: 'Kitchen Memories',
     technologies: ['React', 'REST API', 'Node.js'],
     description: {
