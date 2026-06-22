@@ -89,7 +89,7 @@ const projects: Project[] = [
       en: 'Frontend Developer',
       pt: 'Desenvolvedor Frontend'
     },
-    year: '2024',
+    year: '2020',
     features: {
       en: ['Advanced recipe search and filtering', 'Interactive UI with fast loading times', 'Responsive design for all devices', 'Third-party API integration'],
       pt: ['Busca e filtragem avançada de receitas', 'Interface interativa com carregamento rápido', 'Design responsivo para todos os dispositivos', 'Integração com API de terceiros']
@@ -121,7 +121,7 @@ const projects: Project[] = [
       en: 'Frontend Developer',
       pt: 'Desenvolvedor Frontend'
     },
-    year: '2024',
+    year: '2020',
     features: {
       en: ['Interactive cart and checkout flow', 'Dynamic rendering with Vanilla JS', 'CSS Grid and Flexbox layouts', 'No-framework fast performance'],
       pt: ['Fluxo de carrinho e checkout interativo', 'Renderização dinâmica com Vanilla JS', 'Layouts usando CSS Grid e Flexbox', 'Alta performance sem frameworks']
@@ -153,7 +153,7 @@ const projects: Project[] = [
       en: 'Frontend Developer',
       pt: 'Desenvolvedor Frontend'
     },
-    year: '2024',
+    year: '2020',
     features: {
       en: ['Real-time currency conversion', 'Financial tracking dashboard', 'External API integration', 'State management in React'],
       pt: ['Conversão de moedas em tempo real', 'Dashboard de acompanhamento financeiro', 'Integração de API externa', 'Gerenciamento de estado no React']
@@ -185,7 +185,7 @@ const projects: Project[] = [
       en: 'Frontend Developer',
       pt: 'Desenvolvedor Frontend'
     },
-    year: '2024',
+    year: '2020',
     features: {
       en: ['Create, Read, Update, Delete tasks', 'Local storage persistence', 'Minimalist and clean design', 'React Hooks utilization'],
       pt: ['Criar, Ler, Atualizar, Excluir tarefas', 'Persistência no local storage', 'Design minimalista e limpo', 'Utilização de React Hooks']
