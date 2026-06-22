@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useLang } from '@/contexts/LangContext';
+import Link from 'next/link';
 
 export default function Navbar() {
   const { lang, toggleLang, t } = useLang();
@@ -8,12 +9,12 @@ export default function Navbar() {
   const [activeSection, setActiveSection] = useState('home');
 
   const NAV_ITEMS = [
-    { label: t('nav.home'), href: '#home' },
-    { label: t('nav.about'), href: '#about' },
-    { label: t('nav.skills'), href: '#skills' },
-    { label: t('nav.experience'), href: '#experience' },
-    { label: t('nav.projects'), href: '#projects' },
-    { label: t('nav.contact'), href: '#contact' },
+    { label: t('nav.home'), href: '/#home' },
+    { label: t('nav.about'), href: '/#about' },
+    { label: t('nav.skills'), href: '/#skills' },
+    { label: t('nav.experience'), href: '/#experience' },
+    { label: t('nav.projects'), href: '/#projects' },
+    { label: t('nav.contact'), href: '/#contact' },
   ];
 
   useEffect(() => {
@@ -55,25 +56,25 @@ export default function Navbar() {
     >
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logo */}
-        <a href="#home" className="font-display font-bold text-xl text-tx-primary tracking-tight">
+        <Link href="/#home" className="font-display font-bold text-xl text-tx-primary tracking-tight">
           W<span className="text-accent">R</span>
-        </a>
+        </Link>
 
         {/* Desktop nav */}
         <div className="hidden md:flex items-center gap-1">
           <ul className="flex items-center gap-1">
             {NAV_ITEMS.map(item => (
               <li key={item.href}>
-                <a
+                <Link
                   href={item.href}
                   className={`px-3 py-2 text-sm font-medium rounded-lg transition-colors duration-200 ${
-                    activeSection === item.href.slice(1)
+                    activeSection === item.href.slice(2)
                       ? 'text-accent bg-accent/10'
                       : 'text-tx-secondary hover:text-tx-primary hover:bg-elevated/50'
                   }`}
                 >
                   {item.label}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
@@ -119,17 +120,17 @@ export default function Navbar() {
         <ul className="px-6 py-4 flex flex-col gap-1">
           {NAV_ITEMS.map(item => (
             <li key={item.href}>
-              <a
+              <Link
                 href={item.href}
                 onClick={handleClick}
                 className={`block px-4 py-3 text-sm font-medium rounded-lg transition-colors duration-200 ${
-                  activeSection === item.href.slice(1)
+                  activeSection === item.href.slice(2)
                     ? 'text-accent bg-accent/10'
                     : 'text-tx-secondary hover:text-tx-primary hover:bg-elevated/50'
                 }`}
               >
                 {item.label}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>

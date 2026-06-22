@@ -1,4 +1,5 @@
 import { GetStaticProps, GetStaticPaths } from 'next';
+import { useState, useEffect } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import Navbar from '@/components/Navbar';
@@ -12,6 +13,24 @@ interface ProjectPageProps {
 
 export default function ProjectPage({ project }: ProjectPageProps) {
   const { lang, t } = useLang();
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [isHovered, setIsHovered] = useState(false);
+
+  // Reseta o índice se trocar de projeto
+  useEffect(() => {
+    setCurrentImageIndex(0);
+  }, [project?.slug]);
+
+  // Slideshow automático a cada 4 segundos, pausa no hover
+  useEffect(() => {
+    if (!project?.gallery || project.gallery.length <= 1 || isHovered) return;
+    
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prev) => (prev + 1) % project.gallery.length);
+    }, 4000);
+    
+    return () => clearInterval(interval);
+  }, [project?.gallery, isHovered]);
 
   if (!project) return null;
 
@@ -60,14 +79,58 @@ export default function ProjectPage({ project }: ProjectPageProps) {
             </div>
           </header>
 
-          {/* Gallery */}
+          {/* Gallery Carousel */}
           {project.gallery && project.gallery.length > 0 && (
-            <div className="mb-20 space-y-8">
-              {project.gallery.map((imgUrl, index) => (
-                <div key={index} className="relative rounded-2xl overflow-hidden bg-elevated border border-elevated/50 shadow-2xl">
-                  <img src={imgUrl} alt={`${project.title} screenshot ${index + 1}`} className="w-full h-auto object-cover" />
+            <div 
+              className="mb-20 relative w-full aspect-[4/3] md:aspect-video rounded-2xl overflow-hidden bg-deep border border-elevated/50 shadow-2xl group"
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
+            >
+              {project.gallery.map((imgUrl, index) => {
+                const isActive = index === currentImageIndex;
+                const isMobile = imgUrl.includes('mobile');
+                
+                return (
+                  <div 
+                    key={index} 
+                    className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${isActive ? 'opacity-100 z-10' : 'opacity-0 z-0 pointer-events-none'}`}
+                  >
+                    {/* Blurred background for nice editorial look if image doesn't cover */}
+                    <img src={imgUrl} alt="Background blur" className="absolute inset-0 w-full h-full object-cover blur-3xl opacity-40 scale-110" />
+                    
+                    {/* Main image container */}
+                    {isMobile ? (
+                      <div className="absolute inset-y-4 md:inset-y-8 left-1/2 -translate-x-1/2 w-[280px] md:w-[320px] rounded-[2rem] border-[8px] border-surface/80 overflow-y-auto shadow-2xl scrollbar-hide bg-surface">
+                        <img 
+                          src={imgUrl} 
+                          alt={`${project.title} mobile view ${index + 1}`} 
+                          className="w-full h-auto block" 
+                        />
+                      </div>
+                    ) : (
+                      <img 
+                        src={imgUrl} 
+                        alt={`${project.title} screenshot ${index + 1}`} 
+                        className="absolute inset-0 w-full h-full object-cover" 
+                      />
+                    )}
+                  </div>
+                );
+              })}
+              
+              {/* Pagination Dots */}
+              {project.gallery.length > 1 && (
+                <div className="absolute bottom-6 left-0 w-full flex justify-center gap-3 z-20 pointer-events-none">
+                  {project.gallery.map((_, idx) => (
+                    <button 
+                      key={idx}
+                      onClick={() => setCurrentImageIndex(idx)}
+                      className={`h-2 rounded-full transition-all duration-300 pointer-events-auto ${idx === currentImageIndex ? 'w-8 bg-accent' : 'w-2 bg-white/40 hover:bg-white/70'}`}
+                      aria-label={`Go to slide ${idx + 1}`}
+                    />
+                  ))}
                 </div>
-              ))}
+              )}
             </div>
           )}
 

@@ -66,9 +66,12 @@ const projects: Project[] = [
       en: 'One of the main challenges was integrating the AI analysis in real-time without blocking the user interface. We solved this by implementing asynchronous job queues in the backend, allowing the frontend to instantly receive the lead capture confirmation while the LLM processed the qualification score in the background.',
       pt: 'Um dos principais desafios foi integrar a análise de IA em tempo real sem bloquear a interface do usuário. Resolvemos isso implementando filas de processamento assíncrono no backend, permitindo que o frontend recebesse instantaneamente a confirmação de captura do lead enquanto o LLM processava a pontuação de qualificação em segundo plano.'
     },
-    image: '/projects/LeadflowAI.png',
+    image: '/projects/leadflow-ai/LeadflowAI.png',
     gallery: [
-      '/projects/LeadflowAI.png',
+      '/projects/leadflow-ai/LeadflowAI.png',
+      '/projects/leadflow-ai/LeadflowAI_view2.png',
+      '/projects/leadflow-ai/LeadflowAI_mobile.png',
+      '/projects/leadflow-ai/LeadflowAI_mobile_view2.png',
     ],
     live: 'https://leadflow-ai-eight-tawny.vercel.app/',
     repo: 'https://github.com/wesleypribeiro/leadflow-ai',
@@ -98,9 +101,12 @@ const projects: Project[] = [
       en: 'Handling rate limits and large data payloads from the third-party recipe API required careful state management and caching strategies to ensure a smooth user experience without unnecessary network requests.',
       pt: 'Lidar com limites de taxa (rate limits) e grandes pacotes de dados da API de receitas de terceiros exigiu um gerenciamento cuidadoso de estado e estratégias de cache para garantir uma experiência fluida ao usuário sem requisições de rede desnecessárias.'
     },
-    image: '/projects/KitchenMemories.png',
+    image: '/projects/kitchen-memories/KitchenMemories_desktop.png',
     gallery: [
-      '/projects/KitchenMemories.png',
+      '/projects/kitchen-memories/KitchenMemories_mobile.png',
+      '/projects/kitchen-memories/KitchenMemories_desktop.png',
+      '/projects/kitchen-memories/KitchenMemories_desktop_view2.png',
+      '/projects/kitchen-memories/KitchenMemories_desktop_view3.png',
     ],
     live: 'https://wesleypribeiro.github.io/KitchenMemories/',
     repo: 'https://github.com/wesleypribeiro/KitchenMemories',
@@ -130,9 +136,13 @@ const projects: Project[] = [
       en: 'Managing complex application state (cart items, variations, total price) using only Vanilla JavaScript was challenging. We structured the code with a modular approach, separating data manipulation from DOM updates to maintain readability and performance.',
       pt: 'Gerenciar o estado complexo da aplicação (itens do carrinho, variações, preço total) usando apenas Vanilla JavaScript foi um desafio. Estruturamos o código com uma abordagem modular, separando a manipulação de dados das atualizações do DOM para manter a legibilidade e a performance.'
     },
-    image: '/projects/TheBurger.png',
+    image: '/projects/the-burger/TheBurger_desktop.png',
     gallery: [
-      '/projects/TheBurger.png',
+      '/projects/the-burger/TheBurger_desktop.png',
+      '/projects/the-burger/TheBurger_desktop_view3.png',
+      '/projects/the-burger/TheBurger_desktop_cart.png',
+      '/projects/the-burger/TheBurger_mobile.png',
+      '/projects/the-burger/TheBurger_desktop_added.png',
     ],
     live: 'https://wesleypribeiro.github.io/TheBurger/',
     repo: 'https://github.com/wesleypribeiro/TheBurger',
@@ -162,9 +172,12 @@ const projects: Project[] = [
       en: 'Ensuring real-time accuracy while avoiding API overuse. We implemented debouncing on the currency input fields and locally cached exchange rates for short durations to provide instant feedback while respecting the API usage limits.',
       pt: 'Garantir precisão em tempo real evitando o uso excessivo da API. Implementamos um debounce nos campos de entrada de moeda e fizemos um cache local das taxas de câmbio por curtos períodos, para fornecer feedback instantâneo respeitando os limites da API.'
     },
-    image: '/projects/Gigawallet.png',
+    image: '/projects/gigawallet/Gigawallet_desktop.png',
     gallery: [
-      '/projects/Gigawallet.png',
+      '/projects/gigawallet/Gigawallet_desktop_converted.png',
+      '/projects/gigawallet/Gigawallet_desktop_filled.png',
+      '/projects/gigawallet/Gigawallet_mobile.png',
+      '/projects/gigawallet/Gigawallet_desktop.png',
     ],
     live: 'https://wesleypribeiro.github.io/GigaWallet/',
     repo: 'https://github.com/wesleypribeiro/GigaWallet',
@@ -194,9 +207,12 @@ const projects: Project[] = [
       en: 'Designing an interface that feels lightweight while offering robust features like inline editing. We achieved this by using subtle hover states and managing component-level focus efficiently within React.',
       pt: 'Projetar uma interface que pareça leve e ao mesmo tempo ofereça recursos robustos, como edição inline. Alcançamos isso usando estados sutis de hover e gerenciando eficientemente o foco em nível de componente dentro do React.'
     },
-    image: '/projects/TodoList.png',
+    image: '/projects/todo-list/TodoList_desktop.png',
     gallery: [
-      '/projects/TodoList.png',
+      '/projects/todo-list/TodoList_desktop_full.png',
+      '/projects/todo-list/TodoList_desktop_active.png',
+      '/projects/todo-list/TodoList_mobile.png',
+      '/projects/todo-list/TodoList_desktop.png',
     ],
     live: 'https://wesleypribeiro.github.io/todo-list/',
     repo: 'https://github.com/wesleypribeiro/todo-list',
