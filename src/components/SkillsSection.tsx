@@ -10,6 +10,7 @@ const SKILL_CATEGORIES = [
       { name: 'React', icon: '/skills/react.svg' },
       { name: 'TypeScript', icon: '/skills/typescript.svg' },
       { name: 'JavaScript', icon: '/skills/javascript.svg' },
+      { name: 'Tailwind' },
       { name: 'Redux' },
       { name: 'HTML5', icon: '/skills/html.svg' },
       { name: 'CSS3', icon: '/skills/css.svg' },
@@ -25,6 +26,7 @@ const SKILL_CATEGORIES = [
       { name: 'CloudWatch' },
       { name: 'Docker' },
       { name: 'GitHub Actions' },
+      { name: 'GitHub' },
       { name: 'Git', icon: '/skills/git.svg' },
       { name: 'Linux', icon: '/skills/linux.svg' },
     ],
@@ -46,6 +48,7 @@ const SKILL_CATEGORIES = [
       { name: 'MongoDB', icon: '/skills/mongodb.svg' },
       { name: 'MySQL', icon: '/skills/mysql.svg' },
       { name: 'PostgreSQL' },
+      { name: 'Prisma' },
     ],
   },
   {
@@ -55,6 +58,7 @@ const SKILL_CATEGORIES = [
       { name: 'Vite' },
       { name: 'Webpack' },
       { name: 'Next.js' },
+      { name: 'Vercel' },
     ],
   },
   {
@@ -71,6 +75,9 @@ const SKILL_CATEGORIES = [
     skills: [
       { name: 'i18n' },
       { name: 'Agile / Scrum' },
+      { name: 'Claude Code' },
+      { name: 'LangChain' },
+      { name: 'LangGraph' },
     ],
   },
 ];
