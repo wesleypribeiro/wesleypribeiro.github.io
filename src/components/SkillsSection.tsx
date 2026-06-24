@@ -78,6 +78,8 @@ const SKILL_CATEGORIES = [
       { name: 'Claude Code' },
       { name: 'LangChain' },
       { name: 'LangGraph' },
+      { name: 'n8n' },
+      { name: 'LLMs' },
     ],
   },
 ];
