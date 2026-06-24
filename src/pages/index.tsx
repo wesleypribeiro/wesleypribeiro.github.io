@@ -12,11 +12,11 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Wesley Paulo Ribeiro — Full Stack Developer</title>
-        <meta name="description" content="Full Stack Developer specialized in MERN Stack (MongoDB, Express, React, Node.js) and AWS Cloud. Based in São José dos Campos, Brazil." />
+        <title>Wesley Paulo Ribeiro — Web Developer</title>
+        <meta name="description" content="Web Developer specialized in MERN Stack (MongoDB, Express, React, Node.js) and AWS Cloud. Based in São José dos Campos, Brazil." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:title" content="Wesley Paulo Ribeiro — Full Stack Developer" />
-        <meta property="og:description" content="Full Stack Developer specialized in MERN Stack and AWS Cloud. 4+ years building scalable web applications." />
+        <meta property="og:title" content="Wesley Paulo Ribeiro — Web Developer" />
+        <meta property="og:description" content="Web Developer specialized in MERN Stack and AWS Cloud. 4+ years building scalable web applications." />
         <meta property="og:type" content="website" />
         <meta name="theme-color" content="#0A0E17" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />

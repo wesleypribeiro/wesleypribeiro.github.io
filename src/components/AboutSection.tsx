@@ -28,7 +28,7 @@ export default function AboutSection() {
 
           <div className="flex-1 space-y-5">
             <p className="text-tx-secondary text-base md:text-lg leading-relaxed"
-               dangerouslySetInnerHTML={{ __html: t('about.bio1').replace('4+', '<span class="text-accent font-medium">4+</span>').replace('Full Stack Developer', '<span class="text-tx-primary font-medium">Full Stack Developer</span>').replace('Desenvolvedor Full Stack', '<span class="text-tx-primary font-medium">Desenvolvedor Full Stack</span>') }}
+               dangerouslySetInnerHTML={{ __html: t('about.bio1').replace('4+', '<span class="text-accent font-medium">4+</span>').replace('Web Developer', '<span class="text-tx-primary font-medium">Web Developer</span>').replace('Desenvolvedor Web', '<span class="text-tx-primary font-medium">Desenvolvedor Web</span>') }}
             />
             <p className="text-tx-secondary text-base md:text-lg leading-relaxed"
                dangerouslySetInnerHTML={{ __html: t('about.bio2').replace('MERN stack', '<span class="text-accent-warm font-medium">MERN stack</span>').replace('stack MERN', '<span class="text-accent-warm font-medium">stack MERN</span>').replace('AWS Cloud Computing', '<span class="text-tx-primary font-medium">AWS Cloud Computing</span>') }}

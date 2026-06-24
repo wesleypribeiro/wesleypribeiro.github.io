@@ -23,7 +23,7 @@ const translations: Record<string, Record<Lang, string>> = {
   'hero.command1': { en: 'whoami', pt: 'whoami' },
   'hero.name': { en: 'Wesley Paulo Ribeiro', pt: 'Wesley Paulo Ribeiro' },
   'hero.command2': { en: 'cat role.txt', pt: 'cat cargo.txt' },
-  'hero.role': { en: 'Full Stack Engineer · MERN Stack & AWS', pt: 'Engenheiro Full Stack · MERN Stack & AWS' },
+  'hero.role': { en: 'Web Developer · MERN Stack & AWS', pt: 'Desenvolvedor Web · MERN Stack & AWS' },
   'hero.command3': { en: 'echo $LOCATION', pt: 'echo $LOCALIZACAO' },
   'hero.location': { en: 'São José dos Campos, SP, Brazil', pt: 'São José dos Campos, SP, Brasil' },
 
@@ -31,8 +31,8 @@ const translations: Record<string, Record<Lang, string>> = {
   'about.label': { en: 'Get to know me', pt: 'Conheça-me' },
   'about.title': { en: 'About', pt: 'Sobre' },
   'about.bio1': {
-    en: 'Experienced Full Stack Developer specialized in the JavaScript/TypeScript ecosystem. With a degree in Analysis and Systems Development, I\'ve spent the last 4+ years building scalable web applications at production level.',
-    pt: 'Desenvolvedor Full Stack experiente, especializado no ecossistema JavaScript/TypeScript. Com formação em Análise e Desenvolvimento de Sistemas, passei os últimos 4+ anos construindo aplicações web escaláveis em nível de produção.',
+    en: 'Experienced Web Developer specialized in the JavaScript/TypeScript ecosystem. With a degree in Analysis and Systems Development, I\'ve spent the last 4+ years building scalable web applications at production level.',
+    pt: 'Desenvolvedor Web experiente, especializado no ecossistema JavaScript/TypeScript. Com formação em Análise e Desenvolvimento de Sistemas, passei os últimos 4+ anos construindo aplicações web escaláveis em nível de produção.',
   },
   'about.bio2': {
     en: 'My core expertise lies in the MERN stack (MongoDB, Express, React, Node.js), coupled with solid experience in AWS Cloud Computing (Lambda, SQS, SES, S3) and Linux environments. I\'m passionate about clean code, DevOps practices using Docker, and solving complex problems efficiently.',
